@@ -40,9 +40,8 @@ const Hero = () => {
                 </span>
               </h1>
 
-              <p className="text-xl text-primary-foreground/90 lg:text-2xl">
-                A healthcare-tuned AI receptionist made for Cliniko —
-                never miss a booking, triage properly, and keep patient records accurate 24/7.
+              <p className="text-xl leading-relaxed text-primary-foreground/90 lg:text-2xl">
+                HealthVoice is your AI receptionist, made just for Cliniko. It picks up calls, books and reschedules patients, and answers their questions — 24/7.
               </p>
             </div>
 

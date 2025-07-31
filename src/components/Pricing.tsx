@@ -9,7 +9,7 @@ const Pricing = () => {
       price: 199,
       description: "Perfect for small practices",
       features: [
-        "Up to 500 calls/month",
+        "Up to 200 calls/month",
         "Basic appointment booking",
         "EMR integration (Cliniko, Jane)",
         "Standard business hours support",
@@ -20,10 +20,10 @@ const Pricing = () => {
     },
     {
       name: "Professional",
-      price: 399,
+      price: 499,
       description: "Most popular for growing clinics",
       features: [
-        "Up to 1,500 calls/month",
+        "Up to 500 calls/month",
         "Advanced triage workflows",
         "Multi-provider scheduling",
         "24/7 patient support",
@@ -36,17 +36,15 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      price: 599,
+      price: 799,
       description: "For large practices & clinics",
       features: [
-        "Unlimited calls",
+        "Up to 1,000 calls/month",
         "Multi-location support",
         "Advanced integrations",
         "Custom AI training",
         "Emergency dispatch protocols",
         "Dedicated account manager",
-        "White-label options",
-        "SLA guarantees"
       ],
       popular: false
     }
@@ -66,8 +64,8 @@ const Pricing = () => {
 
         <div className="grid gap-8 lg:grid-cols-3 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className={`relative bg-background shadow-card border-0 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 ${
                 plan.popular ? 'ring-2 ring-primary scale-105' : ''
               }`}
@@ -80,7 +78,7 @@ const Pricing = () => {
                   </span>
                 </div>
               )}
-              
+
               <CardHeader className="text-center pb-8">
                 <CardTitle className="text-2xl font-bold text-foreground">
                   {plan.name}
@@ -104,9 +102,9 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-                <Button 
-                  variant={plan.popular ? "cta" : "outline"} 
-                  size="lg" 
+                <Button
+                  variant={plan.popular ? "cta" : "outline"}
+                  size="lg"
                   className="w-full"
                 >
                   {plan.popular ? "Start Free Trial" : "Get Started"}

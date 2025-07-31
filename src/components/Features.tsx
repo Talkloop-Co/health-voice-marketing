@@ -21,7 +21,7 @@ const Features = () => {
     {
       icon: Database,
       title: "Deep Cliniko Integration",
-      description: "Seamlessly sync with Cliniko, Jane, and other practice management systems. Auto-lookup patients by caller ID for personalized service.",
+      description: "Built specifically for Cliniko with seamless two-way sync. Auto-lookup patients by caller ID and provide personalized service with their booking history.",
       color: "text-health-green"
     },
     {

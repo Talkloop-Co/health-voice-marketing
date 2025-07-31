@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-xl font-bold">HealthVoice</span>
             </div>
             <p className="text-background/80 leading-relaxed">
-              The healthcare-tuned AI receptionist that never misses a patient call. 
+              The Cliniko AI receptionist that never misses a patient call.
               Built for clinics, by healthcare technology experts.
             </p>
           </div>

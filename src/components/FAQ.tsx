@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "How easy is it to set up?",
-      answer: "Setup takes about 15 minutes. We'll help you connect your Cliniko account, scan your website to create FAQs, and configure your AI receptionist. Then simply forward your calls to your new AI number. Our team provides 1:1 support throughout the process."
+      answer: "Setup takes about 10-15 minutes. We'll help you connect your Cliniko account, scan your website to create FAQs, and configure your AI receptionist. Then simply forward your calls to your new AI number. Our team provides 1:1 support throughout the process."
     },
     {
       question: "Is it secure and privacy compliant?",
@@ -64,8 +64,8 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-background border border-border/50 rounded-lg px-6 shadow-soft"
               >
