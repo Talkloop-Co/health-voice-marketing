@@ -36,9 +36,9 @@ const Hero = () => {
               </div>
 
               <h1 className="text-4xl font-bold tracking-tight text-primary-foreground lg:text-6xl">
-                <span className="inline-flex flex-wrap gap-x-2">
-                  Never miss a patient call
-                  <span className="text-health-green">again</span>
+                Never miss a patient{" "}
+                <span className="whitespace-nowrap">
+                  call <span className="text-health-green">again</span>
                 </span>
               </h1>
 
