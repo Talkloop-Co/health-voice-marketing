@@ -10,18 +10,20 @@ const Hero = () => {
       <div className="py-20 container lg:py-28 relative mx-auto px-4">
       {/* ElevenLabs Badge - Top Right */}
       <div className="absolute top-0 right-0 z-20 pr-4">
-        <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-b-xl p-2.5 border-b border-l border-r border-white/20 shadow-lg hover:bg-white/15 transition-all duration-300">
-          <a href="https://elevenlabs.io/text-to-speech" className="flex-shrink-0">
-            <img
-              src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp"
-              alt="Text to Speech"
-              className="w-[120px] max-w-full h-auto"
-            />
+        <div className="flex bg-white/10 backdrop-blur-sm rounded-b-xl p-2.5 border-b border-l border-r border-white/20 shadow-lg hover:bg-white/15 transition-all duration-300">
+          <a href="https://elevenlabs.io/text-to-speech">
+            <div className="flex-shrink-0 inline-flex items-center gap-3">
+              <img
+                src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp"
+                alt="Text to Speech"
+                className="w-[120px] max-w-full h-auto"
+              />
+            <span className="flex items-center gap-1 text-white/90 font-bold text-xs tracking-wide bg-white/5 border border-white/15 px-2 py-1 rounded-lg shadow-sm">
+              🏆
+              Winner
+            </span>
+            </div>
           </a>
-          <span className="flex items-center gap-1 text-white/90 font-bold text-xs tracking-wide bg-white/5 border border-white/15 px-2 py-1 rounded-lg shadow-sm">
-            🏆
-            Winner
-          </span>
 
         </div>
       </div>
