@@ -37,8 +37,8 @@ const CTA = () => {
             </div>
             <div className="w-px h-12 bg-primary-foreground/20" />
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary-foreground">HIPAA</div>
-              <div className="text-sm">compliant</div>
+              <div className="text-2xl font-bold text-primary-foreground">Privacy</div>
+              <div className="text-sm">protected</div>
             </div>
           </div>
         </div>

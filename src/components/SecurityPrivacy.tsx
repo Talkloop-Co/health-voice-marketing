@@ -4,25 +4,20 @@ import { Shield, Lock, FileCheck, Globe2 } from "lucide-react";
 const SecurityPrivacy = () => {
   const trustFeatures = [
     {
-      icon: Shield,
-      title: "HIPAA Compliant",
-      description: "Full compliance with healthcare privacy regulations and data protection standards."
-    },
-    {
       icon: Lock,
       title: "End-to-End Encryption",
       description: "All patient communications are encrypted in transit and at rest for maximum security."
     },
     {
       icon: FileCheck,
-      title: "GDPR",
-      description: "Complete compliance with European data protection regulations for international patients."
+      title: "Secure Data Handling",
+      description: "Enterprise-grade data protection with strict access controls and audit trails."
     },
     {
-      icon: Globe2,
-      title: "Australian Privacy Principles",
-      description: "Adheres to Australia's Privacy Act for comprehensive patient data protection."
-    }
+      icon: Shield,
+      title: "Privacy Protected",
+      description: "Built with healthcare privacy in mind, following best practices for patient data protection."
+    },
   ];
 
   return (
@@ -37,12 +32,12 @@ const SecurityPrivacy = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {trustFeatures.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group bg-primary-foreground/10 border-primary-foreground/20 backdrop-blur-sm transition-all duration-300 hover:bg-primary-foreground/20 hover:-translate-y-2"
               >
                 <CardContent className="p-6 text-center">

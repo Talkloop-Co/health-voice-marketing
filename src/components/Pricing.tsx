@@ -60,7 +60,7 @@ const Pricing = () => {
             Simple, transparent pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your practice. All plans include HIPAA compliance and basic integrations.
+            Choose the plan that fits your practice. All plans include privacy protection and basic integrations.
           </p>
         </div>
 

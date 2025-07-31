@@ -1,17 +1,36 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Shield, Zap } from "lucide-react";
+import { Phone, Shield, Zap, Trophy, Clock } from "lucide-react";
 import heroImage from "@/assets/healthcare-hero.jpg";
 const Hero = () => {
-  return <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-28">
+  return <section className="relative overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-medical-teal/5" />
 
-      <div className="container relative mx-auto px-4">
+
+
+      <div className="py-20 container lg:py-28 relative mx-auto px-4">
+      {/* ElevenLabs Badge - Top Right */}
+      <div className="absolute top-0 right-0 z-20 pr-4">
+        <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-b-xl p-2.5 border-b border-l border-r border-white/20 shadow-lg hover:bg-white/15 transition-all duration-300">
+          <a href="https://elevenlabs.io/text-to-speech" className="flex-shrink-0">
+            <img
+              src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp"
+              alt="Text to Speech"
+              className="w-[120px] max-w-full h-auto"
+            />
+          </a>
+          <span className="flex items-center gap-1 text-white/90 font-bold text-xs tracking-wide bg-white/5 border border-white/15 px-2 py-1 rounded-lg shadow-sm">
+            🏆
+            Winner
+          </span>
+
+        </div>
+      </div>
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 rounded-full bg-calm-gray px-4 py-2 text-sm font-medium text-trust-blue">
                 <Shield className="h-4 w-4" />
-                HIPAA Compliant & Secure
+                Privacy Protected & Secure
               </div>
 
               <h1 className="text-4xl font-bold tracking-tight text-primary-foreground lg:text-6xl">
@@ -43,26 +62,11 @@ const Hero = () => {
                 <span className="font-medium">10-minute setup</span>
               </div>
               <div className="flex items-center gap-2 text-primary-foreground/80">
-                <Shield className="h-5 w-5 text-health-green" />
-                <span className="font-medium">HIPAA compliant</span>
+                <Clock className="h-5 w-5 text-health-green" />
+                <span className="font-medium">24/7 Availability</span>
               </div>
             </div>
 
-            {/* ElevenLabs Badge */}
-            <div className="pt-6">
-              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg hover:bg-white/15 transition-all duration-300">
-                <a href="https://elevenlabs.io/text-to-speech" className="flex-shrink-0">
-                  <img
-                    src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp"
-                    alt="Text to Speech"
-                    className="w-[200px] max-w-full"
-                  />
-                </a>
-                <span className="text-black font-bold text-xl tracking-wide bg-white/90 px-3 py-2 rounded-lg shadow-sm">
-                  Winner
-                </span>
-              </div>
-            </div>
           </div>
 
           <div className="relative">
@@ -118,7 +122,7 @@ const Hero = () => {
           </div>
 
           {/* Mobile: Marquee scrolling */}
-          <div className="sm:hidden overflow-hidden">
+          <div className="sm:hidden">
             <div className="flex gap-4 animate-marquee">
               {[
                 "Game changer for our clinic. No more missed calls.",

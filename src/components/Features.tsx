@@ -32,8 +32,8 @@ const Features = () => {
     },
     {
       icon: Shield,
-      title: "HIPAA Compliant",
-      description: "Built with healthcare security in mind. Encrypted calls, secure data handling, and compliance-first architecture.",
+      title: "Privacy Protected",
+      description: "Built with healthcare security in mind. Encrypted calls, secure data handling, and privacy-first architecture.",
       color: "text-trust-blue"
     },
     {

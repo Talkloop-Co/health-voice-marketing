@@ -20,8 +20,8 @@ const FAQ = () => {
       answer: "Setup takes about 15 minutes. We'll help you connect your Cliniko account, scan your website to create FAQs, and configure your AI receptionist. Then simply forward your calls to your new AI number. Our team provides 1:1 support throughout the process."
     },
     {
-      question: "Is it secure and HIPAA compliant?",
-      answer: "Absolutely. We use end-to-end encryption, strict access controls, and comply with HIPAA, GDPR, and Australian Privacy Principles. Your patient data stays secure and private. We're built for healthcare from the ground up, not adapted from other industries."
+      question: "Is it secure and privacy compliant?",
+      answer: "Absolutely. We use end-to-end encryption, strict access controls, and comply with Australian Privacy Principles and international best practices. Your patient data stays secure and private. We're built for healthcare from the ground up, not adapted from other industries."
     },
     {
       question: "What if a caller needs to speak to a human?",
