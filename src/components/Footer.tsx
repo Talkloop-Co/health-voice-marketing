@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import HealthVoiceIcon from "./HealthVoiceIcon";
 
 const Footer = () => {
   return (
@@ -7,9 +8,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-hero">
-                <Phone className="h-5 w-5 text-primary-foreground" />
-              </div>
+              <HealthVoiceIcon className="h-8 w-8" />
               <span className="text-xl font-bold">HealthVoice</span>
             </div>
             <p className="text-background/80 leading-relaxed">
