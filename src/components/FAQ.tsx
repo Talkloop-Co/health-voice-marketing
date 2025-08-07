@@ -50,7 +50,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="faq" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl mb-4">
@@ -84,9 +84,9 @@ const FAQ = () => {
           <p className="text-muted-foreground mb-4">
             Still have questions? We'd love to help.
           </p>
-          <button className="text-trust-blue hover:text-trust-blue/80 font-medium underline">
+          <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer" className="text-trust-blue hover:text-trust-blue/80 font-medium underline">
             Book a call with our team
-          </button>
+          </a>
         </div>
       </div>
     </section>

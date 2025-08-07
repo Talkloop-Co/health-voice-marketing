@@ -21,7 +21,7 @@ const SecurityPrivacy = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary to-primary/80">
+    <section id="security" className="py-20 bg-gradient-to-br from-primary to-primary/80">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-primary-foreground lg:text-4xl mb-4">

@@ -20,11 +20,14 @@ const Navigation = () => {
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
-            </a>
+            </a> */}
             <a href="#security" className="text-muted-foreground hover:text-foreground transition-colors">
               Security
+            </a>
+            <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+              FAQ
             </a>
             <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Contact
@@ -32,8 +35,12 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="default">Get Started</Button>
+            {/* <Button variant="ghost">Sign In</Button> */}
+            <Button asChild variant="default">
+              <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -53,18 +60,25 @@ const Navigation = () => {
               <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
                 Features
               </a>
-              <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              {/* <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
-              </a>
+              </a> */}
               <a href="#security" className="text-muted-foreground hover:text-foreground transition-colors">
                 Security
+              </a>
+              <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                FAQ
               </a>
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </a>
               <div className="flex flex-col gap-2 pt-4">
-                <Button variant="ghost" className="justify-start">Sign In</Button>
-                <Button variant="default" className="justify-start">Get Started</Button>
+                {/* <Button variant="ghost" className="justify-start">Sign In</Button> */}
+                <Button asChild variant="default" className="justify-start">
+                  <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

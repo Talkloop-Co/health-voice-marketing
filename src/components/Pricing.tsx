@@ -51,7 +51,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-muted/20">
+    <section id="pricing" className="hidden py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl mb-4">
@@ -103,11 +103,14 @@ const Pricing = () => {
                 </ul>
 
                 <Button
+                  asChild
                   variant={plan.popular ? "cta" : "outline"}
                   size="lg"
                   className="w-full"
                 >
-                  {plan.popular ? "Start Free Trial" : "Get Started"}
+                  <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer">
+                    {plan.popular ? "Start Free Trial" : "Get Started"}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -118,8 +121,10 @@ const Pricing = () => {
           <p className="text-muted-foreground mb-4">
             All plans include a 14-day free trial. No setup fees or long-term contracts.
           </p>
-          <Button variant="ghost" className="text-primary">
-            Need a custom plan? Contact sales →
+          <Button asChild variant="ghost" className="text-primary">
+            <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer">
+              Need a custom plan? Contact sales →
+            </a>
           </Button>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Shield, Zap, Trophy, Clock } from "lucide-react";
+import { Phone, Shield, Zap, Trophy, Clock, Calendar } from "lucide-react";
 import heroImage from "@/assets/healthcare-hero.jpg";
 const Hero = () => {
   return <section className="relative overflow-hidden bg-gradient-hero">
@@ -48,13 +48,15 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button variant="demo" size="lg" className="text-lg px-8 py-6 h-auto">
-                <Phone className="h-5 w-5" />
-                Book Your Demo
+              <Button asChild variant="demo" size="lg" className="text-lg px-8 py-6 h-auto">
+                <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="h-5 w-5" />
+                  Book A Demo
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 h-auto">
+              {/* <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 h-auto">
                 Watch Demo
-              </Button>
+              </Button> */}
             </div>
 
             <div className="flex items-center gap-8 pt-4">
