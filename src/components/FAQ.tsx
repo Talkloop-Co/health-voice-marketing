@@ -45,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "How much does it cost?",
-      answer: "Our plans start at $299/month for small practices, with higher tiers for busier clinics. When you consider the cost of missed calls and the time saved by your staff, most practices see positive ROI within the first month."
+      answer: "Our plans start at $99/month for small practices, with higher tiers for busier clinics. When you consider the cost of missed calls and the time saved by your staff, most practices see positive ROI within the first month."
     }
   ];
 
