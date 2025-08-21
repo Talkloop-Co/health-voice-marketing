@@ -38,7 +38,7 @@ const Navigation = () => {
             {/* <Button variant="ghost">Sign In</Button> */}
             <Button asChild variant="default">
               <a href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" target="_blank" rel="noopener noreferrer">
-                Get Started
+                Learn More
               </a>
             </Button>
           </div>
