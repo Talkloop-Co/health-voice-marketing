@@ -32,7 +32,7 @@ const Index = () => {
       {/* ElevenLabs Voice Widget */}
       <div
         dangerouslySetInnerHTML={{
-          __html: '<elevenlabs-convai agent-id="agent_01k0b7qdh0feyt1jax9fhdhz1r"></elevenlabs-convai>'
+          __html: '<elevenlabs-convai agent-id="agent_4001k3619fe9e61tng0t034d0tmj"></elevenlabs-convai>'
         }}
       />
     </div>
