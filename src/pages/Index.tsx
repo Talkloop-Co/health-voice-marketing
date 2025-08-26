@@ -11,8 +11,19 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
+import { scrollToSection } from "@/utils/navigation";
 
 const Index = () => {
+  useEffect(() => {
+    // Handle scrolling to anchor on page load
+    const hash = window.location.hash;
+    if (hash) {
+      const sectionId = hash.substring(1); // Remove the # character
+      scrollToSection(sectionId);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import HealthVoiceIcon from "./HealthVoiceIcon";
+import { handleSectionNavigation } from "@/utils/navigation";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,19 +18,39 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a 
+              href="/#features" 
+              onClick={(e) => { e.preventDefault(); handleSectionNavigation('features'); }}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Features
             </a>
-            {/* <a href="/#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <a 
+              href="/#pricing" 
+              onClick={(e) => { e.preventDefault(); handleSectionNavigation('pricing'); }}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Pricing
             </a> */}
-            <a href="/#security" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a 
+              href="/#security" 
+              onClick={(e) => { e.preventDefault(); handleSectionNavigation('security'); }}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Security
             </a>
-            <a href="/#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a 
+              href="/#faq" 
+              onClick={(e) => { e.preventDefault(); handleSectionNavigation('faq'); }}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               FAQ
             </a>
-            <a href="/#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a 
+              href="/#contact" 
+              onClick={(e) => { e.preventDefault(); handleSectionNavigation('contact'); }}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Contact
             </a>
           </div>
@@ -57,19 +78,39 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a 
+                href="/#features" 
+                onClick={(e) => { e.preventDefault(); handleSectionNavigation('features'); setIsOpen(false); }}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Features
               </a>
-              {/* <a href="/#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              {/* <a 
+                href="/#pricing" 
+                onClick={(e) => { e.preventDefault(); handleSectionNavigation('pricing'); setIsOpen(false); }}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Pricing
               </a> */}
-              <a href="/#security" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a 
+                href="/#security" 
+                onClick={(e) => { e.preventDefault(); handleSectionNavigation('security'); setIsOpen(false); }}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Security
               </a>
-              <a href="/#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a 
+                href="/#faq" 
+                onClick={(e) => { e.preventDefault(); handleSectionNavigation('faq'); setIsOpen(false); }}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 FAQ
               </a>
-              <a href="/#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a 
+                href="/#contact" 
+                onClick={(e) => { e.preventDefault(); handleSectionNavigation('contact'); setIsOpen(false); }}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Contact
               </a>
               <div className="flex flex-col gap-2 pt-4">
