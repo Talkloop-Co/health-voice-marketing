@@ -17,19 +17,19 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
-            {/* <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <a href="/#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </a> */}
-            <a href="#security" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#security" className="text-muted-foreground hover:text-foreground transition-colors">
               Security
             </a>
-            <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#faq" className="text-muted-foreground hover:text-foreground transition-colors">
               FAQ
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
           </div>
@@ -57,19 +57,19 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
                 Features
               </a>
-              {/* <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              {/* <a href="/#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </a> */}
-              <a href="#security" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#security" className="text-muted-foreground hover:text-foreground transition-colors">
                 Security
               </a>
-              <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#faq" className="text-muted-foreground hover:text-foreground transition-colors">
                 FAQ
               </a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </a>
               <div className="flex flex-col gap-2 pt-4">
