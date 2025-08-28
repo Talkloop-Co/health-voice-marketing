@@ -5,7 +5,26 @@ const Hero = () => {
   return <section className="relative overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-medical-teal/5" />
 
-
+      {/* Urgency Banner */}
+      <div className="relative z-30 bg-gradient-to-r from-health-green to-health-green/90 border-b border-health-green/20">
+        <div className="container mx-auto px-4 py-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-center">
+            <span className="text-white/90 text-sm font-medium">
+              ⚡ <span className="font-bold">EXCLUSIVE:</span> Free setup and free trial for the first 25 Cliniko practices.{" "}
+              <span className="hidden sm:inline">Only a few spots remaining →</span>
+              <span className="sm:hidden">Only a few spots remaining</span>
+            </span>
+            <a 
+              href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white text-health-green px-4 py-2 rounded-full text-sm font-bold hover:bg-white/90 transition-all duration-200 shadow-sm whitespace-nowrap"
+            >
+              Book your demo now
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="py-20 container lg:py-28 relative mx-auto px-4">
       {/* ElevenLabs Badge - Top Right */}
