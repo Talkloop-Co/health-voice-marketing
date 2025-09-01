@@ -11,17 +11,9 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-center">
             <span className="text-white/90 text-sm font-medium">
               ⚡ <span className="font-bold">EXCLUSIVE:</span> Free setup and free trial for the first 25 Cliniko practices.{" "}
-              <span className="hidden sm:inline">Only a few spots remaining →</span>
+              <span className="hidden sm:inline">Only a few spots remaining</span>
               <span className="sm:hidden">Only a few spots remaining</span>
             </span>
-            <a 
-              href="https://cal.com/nicolas-hoban-5khbph/healthvoice-demo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-white text-health-green px-4 py-2 rounded-full text-sm font-bold hover:bg-white/90 transition-all duration-200 shadow-sm whitespace-nowrap"
-            >
-              Book your demo now
-            </a>
           </div>
         </div>
       </div>
@@ -91,8 +83,8 @@ const Hero = () => {
 
           </div>
 
-          <VoiceWidget 
-            agentId="agent_4001k3619fe9e61tng0t034d0tmj" 
+          <VoiceWidget
+            agentId="agent_4001k3619fe9e61tng0t034d0tmj"
             className="w-full"
           />
         </div>
