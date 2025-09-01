@@ -40,12 +40,6 @@ const Index = () => {
       <CTA />
       <Footer />
 
-      {/* ElevenLabs Voice Widget */}
-      <div
-        dangerouslySetInnerHTML={{
-          __html: '<elevenlabs-convai agent-id="agent_4001k3619fe9e61tng0t034d0tmj"></elevenlabs-convai>'
-        }}
-      />
     </div>
   );
 };

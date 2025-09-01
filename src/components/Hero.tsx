@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Shield, Zap, Trophy, Clock, Calendar } from "lucide-react";
-import heroImage from "@/assets/healthcare-hero.jpg";
+import VoiceWidget from "@/components/VoiceWidget";
 const Hero = () => {
   return <section className="relative overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-medical-teal/5" />
@@ -91,12 +91,10 @@ const Hero = () => {
 
           </div>
 
-          <div className="relative">
-            <div className="relative z-10 overflow-hidden rounded-2xl shadow-card">
-              <img src={heroImage} alt="Healthcare AI Voice Assistant" className="w-full h-auto object-cover" loading="eager" />
-            </div>
-            <div className="absolute -top-4 -right-4 h-full w-full bg-health-green/20 rounded-2xl -z-10" />
-          </div>
+          <VoiceWidget 
+            agentId="agent_4001k3619fe9e61tng0t034d0tmj" 
+            className="w-full"
+          />
         </div>
 
         {/* Reviews Section */}
